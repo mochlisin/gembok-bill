@@ -4,6 +4,6 @@ RUN apk add --no-cache python3 make g++ sqlite-dev
 COPY package*.json ./
 RUN npm install --omit=dev
 COPY . .
-EXPOSE 80
-ENV PORT=80
+EXPOSE 3000
+ENV PORT=3000
 CMD ["npm", "start"]
