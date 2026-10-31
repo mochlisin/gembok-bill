@@ -23,7 +23,6 @@
     "@hapi/boom": "^10.0.1",
     "@whiskeysockets/baileys": "^7.0.0-rc.6",
     "axios": "^1.6.7",
-    "bcrypt": "^6.0.0",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "cron": "^4.4.0",
@@ -50,7 +49,8 @@
     "telegraf-inline-menu": "^6.3.0",
     "turf": "^3.0.14",
     "winston": "^3.8.2",
-    "xendit-node": "^7.0.0"
+    "xendit-node": "^7.0.0",
+    "bcryptjs": "^2.4.3"
   },
   "devDependencies": {
     "@playwright/test": "^1.57.0",

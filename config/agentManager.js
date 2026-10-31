@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { getSettingsWithCache } = require('./settingsManager');
 const logger = require('./logger');
 
@@ -1275,7 +1275,7 @@ class AgentManager {
             
             // Add password update if provided
             if (agentData.password) {
-                const bcrypt = require('bcrypt');
+                const bcrypt = require('bcryptjs');
                 const hashedPassword = bcrypt.hashSync(agentData.password, 10);
                 sql += ', password = ?';
                 params.push(hashedPassword);

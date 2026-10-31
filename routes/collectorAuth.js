@@ -8,7 +8,7 @@ const router = express.Router();
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { getSetting } = require('../config/settingsManager');
 
 // Middleware untuk mengecek session tukang tagih

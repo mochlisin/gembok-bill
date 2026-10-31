@@ -442,7 +442,7 @@ router.post('/change-password', requireAgentAuth, async (req, res) => {
                 return res.json({ success: false, message: 'Terjadi kesalahan' });
             }
             
-            const bcrypt = require('bcrypt');
+            const bcrypt = require('bcryptjs');
             const isValid = await bcrypt.compare(currentPassword, row.password);
             
             if (!isValid) {
